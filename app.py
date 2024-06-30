@@ -35,10 +35,10 @@ def main():
             """
 
             formatted_template=template.format(text_input=text_input)
-            st.write(formatted_template)
             response=model.generate_content(formatted_template)
             sql_query=response.text
-            st.write(sql_query)
+
+            sql_query = sql_query.strip().lstrip("```sql").rstrip("```")
         
             expacted_output="""
                 What would be the expected response of this SQL Query Snippet:
@@ -50,7 +50,6 @@ def main():
             expacted_output_formatted=expacted_output.format(sql_query=sql_query)
             eoutput=model.generate_content(expacted_output_formatted)
             eoutput=eoutput.text
-            st.write(eoutput)
 
             explaination="""
                 Explain this SQL Query:
@@ -62,7 +61,17 @@ def main():
             explaination_formatted=explaination.format(sql_query=sql_query)
             explaination=model.generate_content(explaination_formatted)
             explaination=explaination.text
-            st.write(explaination)
+
+            with st.container():
+                st.success("SQL Query Generated Successfully! Here is your Query Below:")
+                st.code(sql_query, language="sql")
+
+                st.success("Expected Output of this SQL Query will be:")
+                st.markdown(eoutput)
+
+                st.success("Explaination of this SQL Query")
+                st.markdown(explaination)
+
         
 
 if __name__ == "__main__":

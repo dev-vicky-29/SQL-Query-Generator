@@ -16,6 +16,7 @@ def main():
             <h1>🛢️👨🏼‍💻 SQL Query Generator 🛢️👨🏼‍💻</h1>
             <h3>I can Generate SQL Query for You!</h3>
             <h4>With Explanation as Well !!</h4>
+            <h5>Developed By Shruti Patil & Vivek Deshmukh</h5>
             <p>This tool is a simple tool that allows you to Generate SQL Queries based on your Prompts.</p>
             </div>
         """,

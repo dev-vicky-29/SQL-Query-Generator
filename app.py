@@ -24,18 +24,7 @@ def main():
             <!-- Button to go to the updated version of Database Query Generator -->
             
             <form action="app2" method="get">
-            <button style="
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 10px 0;
-                border: none;
-                cursor: pointer;
-                width: 100%;
-                text-align: center;
-                font-size: 16px;">
-                Go to Updated Database Query Generator
-            </button>
+            <button style="background-color: #4CAF50; color: white; padding: 14px 20px; margin: 10px 0; border: none; cursor: pointer; width: 100%; text-align: center; font-size: 16px;"> Go to Updated Database Query Generator</button>
         </form>
             </div>
         """,

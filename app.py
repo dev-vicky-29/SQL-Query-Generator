@@ -20,6 +20,23 @@ def main():
              <!-- <a target="_blank" href="https://www.linkedin.com/in/shruti-patil-7676a724a/">Shruti Patil</a> & -->
             <a target="_blank" href="https://www.linkedin.com/in/dev-vicky-29j/">Vivek Deshmukh</a></h5>
             <p>This tool is a simple tool that allows you to Generate SQL Queries based on your Prompts.</p>
+            
+            <!-- Button to go to the updated version of Database Query Generator -->
+            
+            <form action="app2" method="get">
+            <button style="
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 10px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                font-size: 16px;">
+                Go to Updated Database Query Generator
+            </button>
+        </form>
             </div>
         """,
         unsafe_allow_html=True,

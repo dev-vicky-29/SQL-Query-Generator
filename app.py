@@ -22,7 +22,7 @@ def main():
             <p>This tool is a simple tool that allows you to Generate SQL Queries based on your Prompts.</p>
             
             <!-- Button to go to the updated version of Database Query Generator -->
-            <button src="app2.py" target="_blank" style="color: black; padding: 14px 20px; margin: 10px 0; border: none; cursor: pointer; width: 40%; text-align: center; font-size: 16px;">Updated Database Query Generator</button>
+            <a src="app2.py" target="_blank" style="color: black; padding: 14px 20px; margin: 10px 0; border: none; cursor: pointer; width: 40%; text-align: center; font-size: 16px;">Updated Database Query Generator</a>
             </div>
         """,
         unsafe_allow_html=True,
